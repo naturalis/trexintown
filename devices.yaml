@@ -4,7 +4,6 @@
 #   type: computer
 #   barcode: dt000000
 #   description: E-ticketzuil
-#   state: enabled
 #   ip: 172.16.75.22
 #   mac: 00:00:00:00
 #   actions:
@@ -23,10 +22,10 @@ devices:
   powerrelay-001:
     type: powerrelay
     description: Groep 1 - kb005883
-    slot: 1
-    channel: 1
     ip: 172.16.75.10
     mac: 00:00:00:00
+    slot: 1
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -35,10 +34,10 @@ devices:
   powerrelay-002:
     type: powerrelay
     description: Groep 2 - kb005883
-    slot: 2
-    channel: 1
     ip: 172.16.75.10
     mac: 00:00:00:00
+    slot: 2
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -47,10 +46,10 @@ devices:
   powerrelay-003:
     type: powerrelay
     description: Groep 3 - kb005883
-    slot: 3
-    channel: 1
     ip: 172.16.75.10
     mac: 00:00:00:00
+    slot: 3
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -59,10 +58,10 @@ devices:
   powerrelay-004:
     type: powerrelay
     description: Power relay op Kissbox 001235, controleert groep 4
-    slot: 4
-    channel: 1
     ip: 172.16.75.10
     mac: 00:00:00:00
+    slot: 4
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -70,14 +69,14 @@ devices:
 
   kissbox-002:
     type: kissbox
-    barcode: "001236"
+    barcode: kb001236
     description: Kissbox
     ip: 172.16.75.11
     mac: 00:00:00:00
 
   kissbox-003:
     type: kissbox
-    barcode: "001237"
+    barcode: kb001237
     description: Kissbox
     ip: 172.16.75.12
     mac: 00:00:00:00
