@@ -1,0 +1,40 @@
+# this yaml is a job for turning on the museum
+
+collections:
+  trex-in-town:
+    name: T.rex in Town
+    type: exhibition
+    actions:
+      poweron:
+        sequence:
+          - group: kissboxes # stage one
+            objective: on
+            devices:
+            - kissbox-from-a
+            - <other ids>
+          - delay: 600
+          - group: computers
+            objective: on
+            devices:
+              - computer-a
+              - computer-b
+              - beamer-a
+
+  beamers-trex:
+    name: Beamers T.rex in Town
+    type: set
+    actions:
+      poweron:
+        sequence:
+          - group: kissboxes # stage one
+            objective: on
+            devices:
+            - kissbox-from-a
+            - <other ids>
+          - delay: 600
+          - group: computers
+            objective: on
+            devices:
+              - computer-a
+              - computer-b
+              - beamer-a
