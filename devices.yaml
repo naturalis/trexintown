@@ -8,194 +8,175 @@
 #   ip: 172.16.75.22
 #   mac: 00:00:00:00
 #   actions:
-#     poweron:
-#       script: linux.sh
-#       arguments:
-#         host: 172.16.75.22
-#         action: on
-#     poweroff:
-#       script: linux.sh
-#       arguments:
-#         host: 172.16.75.22
-#         action: off
-#     status:
-#       script: linux.sh
-#       arguments:
-#         host: 172.16.75.22
-#         action: status
+#     - poweron
+#     - poweroff
+#     - status
 
 devices:
   kissbox-001:
     type: kissbox
     barcode: kb005883
+    description: Kissbox in MER
     ip: 172.16.75.10
     mac: 00:00:00:00
 
   powerrelay-001:
     type: powerrelay
-    description: Groep 1 - kb001235
-    poweron: kissbox.sh -h 172.16.75.10 -g 1 -a on
-    poweroff: kissbox.sh -h 172.16.75.10 -g 1 -a off
-    status: kissbox.sh -h 172.16.75.10 -g 1 -a status
+    description: Groep 1 - kb005883
+    slot: 1
+    channel: 1
+    ip: 172.16.75.10
+    mac: 00:00:00:00
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   powerrelay-002:
     type: powerrelay
-    description: Groep 2 - kb001235
-    poweron: kissbox.sh -h 172.16.75.10 -g 2 -a on
-    poweroff: kissbox.sh -h 172.16.75.10 -g 2 -a off
-    status: kissbox.sh -h 172.16.75.10 -g 2 -a status
+    description: Groep 2 - kb005883
+    slot: 2
+    channel: 1
+    ip: 172.16.75.10
+    mac: 00:00:00:00
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   powerrelay-003:
     type: powerrelay
-    description: Groep 3 - kb001235
-    poweron: kissbox.sh -h 172.16.75.10 -g 3 -a on
-    poweroff: kissbox.sh -h 172.16.75.10 -g 3 -a off
-    status: kissbox.sh -h 172.16.75.10 -g 3 -a status
+    description: Groep 3 - kb005883
+    slot: 3
+    channel: 1
+    ip: 172.16.75.10
+    mac: 00:00:00:00
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   powerrelay-004:
     type: powerrelay
     description: Power relay op Kissbox 001235, controleert groep 4
-    poweron: kissbox.sh -h 172.16.75.10 -g 4 -a on
-    poweroff: kissbox.sh -h 172.16.75.10 -g 4 -a off
-    status: kissbox.sh -h 172.16.75.10 -g 4 -a status
+    slot: 4
+    channel: 1
+    ip: 172.16.75.10
+    mac: 00:00:00:00
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   kissbox-002:
     type: kissbox
     barcode: "001236"
+    description: Kissbox
     ip: 172.16.75.11
     mac: 00:00:00:00
 
   kissbox-003:
     type: kissbox
     barcode: "001237"
+    description: Kissbox
     ip: 172.16.75.12
     mac: 00:00:00:00
 
-  kissbox-004:
-    type: kissbox
-    barcode: kb001238
-    ip: 172.16.75.13
-    mac: 00:00:00:00
-
   interactive-grafitti-001:
-    type: computer
+    type: windows
     barcode: dt005873
     description: T.rex grafitti interactive
     ip: 172.16.75.14
     mac: 00:00:00:00
-    poweron: windows.sh -h 172.16.75.14 -a on
-    poweroff: windows.sh -h 172.16.75.14 -a off
-    status: windows.sh -h 172.16.75.14 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   interactive-gym-001:
-    type: computer
+    type: windows
     barcode: dt005874
     description: T.rex gym interactive
     ip: 172.16.75.15
     mac: 00:00:00:00
-    poweron: windows.sh -h 172.16.75.15 -a on
-    poweroff: windows.sh -h 172.16.75.15 -a off
-    status: windows.sh -h 172.16.75.15 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   interactive-dance-001:
-    type: computer
+    type: windows
     barcode: dt005872
     description: T.rex dance interactive
     ip: 172.16.75.16
     mac: 00:00:00:00
-    poweron: windows.sh -h 172.16.75.16 -a on
-    poweroff: windows.sh -h 172.16.75.16 -a off
-    status: windows.sh -h 172.16.75.16 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   interactive-fossielen-001:
-    type: computer
+    type: windows
     barcode: dt005871
     description: T.rex medisch dossier interactive
     ip: 172.16.75.17
     mac: 00:00:00:00
-    poweron: windows.sh -h 172.16.75.17 -a on
-    poweroff: windows.sh -h 172.16.75.17 -a off
-    status: windows.sh -h 172.16.75.17 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   videoplayer-001:
-    type: computer
+    type: linux
     barcode: dt005878
     description: Videoplayer
     ip: 172.16.75.18
     mac: 00:00:00:00
-    poweron: linux.sh -h 172.16.75.18 -a on
-    poweroff: linux.sh -h 172.16.75.18 -a off
-    status: linux.sh -h 172.16.75.18 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   videoplayer-002:
-    type: computer
+    type: linux
     barcode: dt005877
     description: Videoplayer
     ip: 172.16.75.19
     mac: 00:00:00:00
-    poweron: linux.sh -h 172.16.75.19 -a on
-    poweroff: linux.sh -h 172.16.75.19 -a off
-    status: linux.sh -h 172.16.75.19 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   videoplayer-003:
-    type: computer
+    type: linux
     barcode: dt005880
     description: Videoplayer
     ip: 172.16.75.20
     mac: 00:00:00:00
-    poweron: linux.sh -h 172.16.75.20 -a on
-    poweroff: linux.sh -h 172.16.75.20 -a off
-    status: linux.sh -h 172.16.75.20 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   videoplayer-004:
-    type: computer
+    type: linux
     barcode: dt005879
     description: Videoplayer
     ip: 172.16.75.21
     mac: 00:00:00:00
-    poweron: linux.sh -h 172.16.75.21 -a on
-    poweroff: linux.sh -h 172.16.75.21 -a off
-    status: linux.sh -h 172.16.75.21 -a status
+    actions:
+      - poweron
+      - poweroff
+      - status
 
-  eticket-001:
-    type: computer
-    barcode: dt000000
+  bottenapp-001:
+    type: linux
+    barcode: dt005864
     description: E-ticketzuil
     ip: 172.16.75.22
     mac: 00:00:00:00
     actions:
-      poweron:
-        script: linux.sh
-        arguments:
-          host: 172.16.75.22
-          action: on
-      poweroff:
-        script: linux.sh
-        arguments:
-          host: 172.16.75.22
-          action: off
-      status:
-        script: linux.sh
-        arguments:
-          host: 172.16.75.22
-          action: status
-
-  eticket-002:
-    type: computer
-    barcode: dt000000
-    description: E-ticketzuil
-    ip: 172.16.75.23
-    mac: 00:00:00:00
-    poweron: linux.sh -h 172.16.75.23 -a on
-    poweroff: linux.sh -h 172.16.75.23 -a off
-    status: linux.sh -h 172.16.75.23 -a status
-
-  bottenapp-001:
-    type: computer
-    barcode: dt005864
-    description: E-ticketzuil
-    ip: 172.16.75.23
-    mac: 00:00:00:00
-    poweron: linux.sh -h 172.16.75.23 -a on
-    poweroff: linux.sh -h 172.16.75.23 -a off
-    status: linux.sh -h 172.16.75.23 -a status
+      - poweron
+      - poweroff
+      - status
