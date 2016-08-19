@@ -6,34 +6,47 @@ collections:
     type: exhibition
     actions:
       poweron:
+        description: turn on the trex in down exhibition
+        blocking: true
         sequence:
-          - group: kissboxes # stage one
-            objective: on
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 12
+          - description: turning on kissboxes # stage one
+            objective: poweron
             devices:
-            - kissbox-from-a
-            - <other ids>
-          - delay: 600
-          - group: computers
-            objective: on
+            - powerrelay-001
+            - powerrelay-002
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 23
+          - description: turing on all computers
+            objective: poweron
             devices:
-              - computer-a
-              - computer-b
-              - beamer-a
+              - powerrelay-003
+              - powerrelay-004
+              - interactive-gym-001
 
   beamers-trex:
     name: Beamers T.rex in Town
     type: set
     actions:
       poweron:
+        description: turn on the trex in down exhibition
+        blocking: false
         sequence:
-          - group: kissboxes # stage one
-            objective: on
+          - description: turning on kissboxes # stage one
+            objective: poweron
             devices:
             - kissbox-from-a
-            - <other ids>
-          - delay: 600
-          - group: computers
-            objective: on
+            - <other ids>- objective: delay
+            description: waiting for 3 seconds
+            time: 23
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 3
+          - description: turing on all computers
+            objective: poweron
             devices:
               - computer-a
               - computer-b
