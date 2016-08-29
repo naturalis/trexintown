@@ -53,7 +53,7 @@ devices:
     barcode: kb000000
     description: Kissbox op zolder voor Ecue
     ip: 172.16.75.9
-    mac: 00:e0:6b:7e:ff:4d
+    mac: 00:e0:6b:ff:06:03
 
   butler-002:
     type: butler
