@@ -12,18 +12,70 @@
 #     - status
 
 devices:
-  kissbox-001:
+  # Stargazer
+  foreman-001:
+    type: linux
+    barcode: sr004346
+    description: Stargazer and Foreman server
+    ip: 172.16.75.5
+    mac: 0c:c4:7a:03:d8:fc
+    state: enabled
+
+  # Ecue lighting computer
+  ecue-001:
+    type: windows
+    barcode: dt003566
+    description: Ecue lighting computer
+    ip: 172.16.75.6
+    mac: 84:8f:69:f8:ab:02
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  reserve-001:
+    type: reserve
+    barcode: bt000000
+    description: Reserve
+    ip: 172.16.75.7
+    mac: 00:00:00:00:00:00
+
+  butler-001:
+    type: butler
+    barcode: bt000000
+    description: Butler voor Ecue
+    ip: 172.16.75.8
+    mac: 00:00:00:00:00:00
+
+  kissbox-ecue-001:
+    type: kissbox
+    barcode: kb000000
+    description: Kissbox op zolder voor Ecue
+    ip: 172.16.75.9
+    mac: 00:e0:6b:7e:ff:4d
+
+  butler-002:
+    type: butler
+    barcode: bt000000
+    description: Butler voor Ecue
+    ip: 172.16.75.10
+    mac: 00:00:00:00:00:00
+
+  # Everything related to Kissbox MER
+  kissbox-mer:
     type: kissbox
     barcode: kb005883
     description: Kissbox in MER
-    ip: 172.16.75.10
-    mac: 00:00:00:00
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
 
-  powerrelay-001:
+  kissbox-mer-groep-001:
     type: powerrelay
-    description: Groep 1 - kb005883
-    ip: 172.16.75.10
-    mac: 00:00:00:00
+    description: Loopverlichting NIC 1
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
     slot: 1
     channel: 1
     actions:
@@ -31,11 +83,51 @@ devices:
       - poweroff
       - status
 
-  powerrelay-002:
+  kissbox-mer-groep-002:
     type: powerrelay
-    description: Groep 2 - kb005883
-    ip: 172.16.75.10
-    mac: 00:00:00:00
+    description: Loopverlichting NIC 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 1
+    channel: 2
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-003:
+    type: powerrelay
+    description: Balie NIC 1, Wandverlichting NIC 1, Vitrine verlichting NIC 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 1
+    channel: 3
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-004:
+    type: powerrelay
+    description: Dimmer 1 NIC 1, Dimmer 2 NIC 1
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 1
+    channel: 4
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-005:
+    type: powerrelay
+    description: Wandverlichting NIC 2, Vitrineverlichting NIC 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
     slot: 2
     channel: 1
     actions:
@@ -43,11 +135,51 @@ devices:
       - poweroff
       - status
 
-  powerrelay-003:
+  kissbox-mer-groep-006:
     type: powerrelay
-    description: Groep 3 - kb005883
-    ip: 172.16.75.10
-    mac: 00:00:00:00
+    description: Dimmer 3 NIC 2, Dimmer 4 NIC 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 2
+    channel: 2
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-007:
+    type: powerrelay
+    description: Verlichting entresol NIC
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 2
+    channel: 3
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-008:
+    type: powerrelay
+    description: Stekkerdoos spanningsrail (groep 27)
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 2
+    channel: 4
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-009:
+    type: powerrelay
+    description: Stekkerdoos spanningsrail (groep 40)
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
     slot: 3
     channel: 1
     actions:
@@ -55,38 +187,199 @@ devices:
       - poweroff
       - status
 
-  powerrelay-004:
+  kissbox-mer-groep-010:
     type: powerrelay
-    description: Power relay op Kissbox 001235, controleert groep 4
-    ip: 172.16.75.10
-    mac: 00:00:00:00
-    slot: 4
+    description: ASP (groep 29)
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 3
+    channel: 2
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-011:
+    type: powerrelay
+    description: Reserve
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 3
+    channel: 3
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-012:
+    type: powerrelay
+    description: Compressor
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 3
+    channel: 4
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  # Everything related to Kissbox Lift
+  kissbox-lift:
+    type: kissbox
+    barcode: kb001236
+    description: Kissbox in Lift
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+
+  kissbox-lift-groep-001:
+    type: powerrelay
+    description: Loopverlichting café
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+    state: enabled
+    slot: 1
     channel: 1
     actions:
       - poweron
       - poweroff
       - status
 
-  kissbox-002:
-    type: kissbox
-    barcode: kb001236
-    description: Kissbox
-    ip: 172.16.75.11
-    mac: 00:00:00:00
+  kissbox-lift-groep-002:
+    type: powerrelay
+    description: Loopverlichting filmzaal
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+    state: enabled
+    slot: 1
+    channel: 2
+    actions:
+      - poweron
+      - poweroff
+      - status
 
-  kissbox-003:
+  kissbox-lift-groep-003:
+    type: powerrelay
+    description: Loopverlichting tijdelijke tentoonstelling
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+    state: enabled
+    slot: 1
+    channel: 3
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-lift-groep-004:
+    type: powerrelay
+    description: Tijdelijke tentoonstelling spanningsrail 3
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+    state: enabled
+    slot: 1
+    channel: 4
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-lift-groep-005:
+    type: powerrelay
+    description: Tijdelijke tentoonstelling spanningsrail 4
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+    state: enabled
+    slot: 2
+    channel: 1
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-lift-groep-006:
+    type: powerrelay
+    description: Reserve
+    ip: 172.16.75.12
+    mac: 00:e0:6b:7e:ff:7a
+    state: enabled
+    slot: 2
+    channel: 2
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  # Everything related to Kissbox SER
+  kissbox-ser:
     type: kissbox
     barcode: kb001237
-    description: Kissbox
-    ip: 172.16.75.12
-    mac: 00:00:00:00
+    description: Kissbox in SER
+    ip: 172.16.75.13
+    mac: 00:e0:6b:7e:ff:4d
 
+  kissbox-ser-groep-001:
+    type: powerrelay
+    description: Dimmerkast
+    ip: 172.16.75.13
+    mac: 00:e0:6b:7e:ff:4d
+    state: enabled
+    slot: 1
+    channel: 1
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-ser-groep-002:
+    type: powerrelay
+    description: Dimmerkast
+    ip: 172.16.75.13
+    mac: 00:e0:6b:7e:ff:4d
+    state: enabled
+    slot: 1
+    channel: 2
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-ser-groep-003:
+    type: powerrelay
+    description: Dimmerkast
+    ip: 172.16.75.13
+    mac: 00:e0:6b:7e:ff:4d
+    state: enabled
+    slot: 1
+    channel: 3
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-ser-groep-004:
+    type: powerrelay
+    description: Dimmerkast
+    ip: 172.16.75.13
+    mac: 00:e0:6b:7e:ff:4d
+    state: enabled
+    slot: 1
+    channel: 4
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  # Interactives
   interactive-grafitti-001:
     type: windows
     barcode: dt005873
     description: T.rex grafitti interactive
     ip: 172.16.75.14
-    mac: 00:00:00:00
+    mac: 40:8d:5c:81:9b:44
+    state: enabled
     actions:
       - poweron
       - poweroff
@@ -97,7 +390,8 @@ devices:
     barcode: dt005874
     description: T.rex gym interactive
     ip: 172.16.75.15
-    mac: 00:00:00:00
+    mac: 40:8d:5c:81:9a:e5
+    state: enabled
     actions:
       - poweron
       - poweroff
@@ -108,62 +402,20 @@ devices:
     barcode: dt005872
     description: T.rex dance interactive
     ip: 172.16.75.16
-    mac: 00:00:00:00
+    mac: 40:8d:5c:81:9b:10
+    state: enabled
     actions:
       - poweron
       - poweroff
       - status
 
-  interactive-fossielen-001:
+  interactive-medischdossier-001:
     type: windows
     barcode: dt005871
     description: T.rex medisch dossier interactive
     ip: 172.16.75.17
-    mac: 00:00:00:00
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  videoplayer-001:
-    type: linux
-    barcode: dt005878
-    description: Videoplayer
-    ip: 172.16.75.18
-    mac: 00:00:00:00
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  videoplayer-002:
-    type: linux
-    barcode: dt005877
-    description: Videoplayer
-    ip: 172.16.75.19
-    mac: 00:00:00:00
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  videoplayer-003:
-    type: linux
-    barcode: dt005880
-    description: Videoplayer
-    ip: 172.16.75.20
-    mac: 00:00:00:00
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  videoplayer-004:
-    type: linux
-    barcode: dt005879
-    description: Videoplayer
-    ip: 172.16.75.21
-    mac: 00:00:00:00
+    mac: 40:8d:5c:81:9b:17
+    state: enabled
     actions:
       - poweron
       - poweroff
@@ -173,8 +425,108 @@ devices:
     type: linux
     barcode: dt005864
     description: E-ticketzuil
+    ip: 172.16.75.18
+    mac: 00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  # Videoplayers
+  videoplayer-001:
+    type: linux
+    barcode: dt005878
+    description: Videoplayer Anne Schulp 1
+    ip: 172.16.75.19
+    mac: 00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  videoplayer-002:
+    type: linux
+    barcode: dt005877
+    description: Videoplayer Anne Schulp 2
+    ip: 172.16.75.20
+    mac: 00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  videoplayer-003:
+    type: linux
+    barcode: dt005880
+    description: Videoplayer Anne Schulp 3
+    ip: 172.16.75.21
+    mac: 00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  videoplayer-004:
+    type: linux
+    barcode: dt005879
+    description: Videoplayer Anne Schulp 4
     ip: 172.16.75.22
     mac: 00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  videoplayer-005:
+    type: linux
+    barcode: dt000000
+    description: Videoplayer T.rex docu
+    ip: 172.16.75.23
+    actions:
+    mac: 00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  # Tests
+  linux-test-001:
+    type: linux
+    barcode: dt005864
+    description: Test NUC
+    ip: 172.16.75.251
+    mac: dc:fe:07:e0:ec:f1
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  linux-test-002:
+    type: linux
+    barcode: sr001234
+    description: Test OpenStack instance
+    ip: 145.136.241.48
+    mac: dc:fe:07:e0:ec:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  windows-test-001:
+    type: windows
+    barcode: dt005878
+    description: Test NUC
+    ip: 172.16.75.250
+    mac: dc:fe:07:e0:ec:97
+    state: enabled
     actions:
       - poweron
       - poweroff

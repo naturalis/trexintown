@@ -4,6 +4,7 @@ collections:
   trex-in-town:
     name: T.rex in Town
     type: exhibition
+    state: enabled
     actions:
       poweron:
         description: turn on the trex in down exhibition
@@ -11,7 +12,7 @@ collections:
         sequence:
           - objective: delay
             description: waiting for 3 seconds
-            time: 12
+            time: 5
           - description: turning on kissboxes # stage one
             objective: poweron
             devices:
@@ -19,7 +20,7 @@ collections:
             - powerrelay-002
           - objective: delay
             description: waiting for 3 seconds
-            time: 23
+            time: 5
           - description: turing on all computers
             objective: poweron
             devices:
@@ -51,3 +52,41 @@ collections:
               - computer-a
               - computer-b
               - beamer-a
+  trex-in-test:
+    name: T.rex in Test
+    type: exhibition
+    state: enabled
+    actions:
+      poweron:
+        description: turn on the trex in test exhibition
+        blocking: true
+        sequence:
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 3
+          - description: turing on all computers
+            objective: poweron
+            devices:
+              - windows-test-001
+              - linux-test-001
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 5
+      poweroff:
+        description: Turn on the T.rex in Test exhibition
+        blocking: true
+        sequence:
+          - description: Turning on all computers
+            objective: poweroff
+            devices:
+              - windows-test-001
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 3
+          - description: Turning on all computers
+            objective: poweroff
+            devices:
+              - linux-test-001
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 5
