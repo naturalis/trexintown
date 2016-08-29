@@ -424,7 +424,7 @@ devices:
   bottenapp-001:
     type: linux
     barcode: dt005864
-    description: E-ticketzuil
+    description: Bottenapp
     ip: 172.16.75.18
     mac: 00:00:00:00
     state: enabled
@@ -439,7 +439,7 @@ devices:
     barcode: dt005878
     description: Videoplayer Anne Schulp 1
     ip: 172.16.75.19
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:97
     state: enabled
     actions:
       - poweron
@@ -451,7 +451,7 @@ devices:
     barcode: dt005877
     description: Videoplayer Anne Schulp 2
     ip: 172.16.75.20
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:f1
     state: enabled
     actions:
       - poweron
