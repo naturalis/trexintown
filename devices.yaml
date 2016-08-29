@@ -373,10 +373,10 @@ devices:
       - status
 
   # Interactives
-  interactive-grafitti-001:
+  interactive-graffiti-001:
     type: windows
     barcode: dt005873
-    description: T.rex grafitti interactive
+    description: T.rex graffiti interactive
     ip: 172.16.75.14
     mac: 40:8d:5c:81:9b:44
     state: enabled
