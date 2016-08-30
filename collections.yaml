@@ -134,13 +134,6 @@ collections:
           - description: Turning on powerrelay
             objective: poweron
             devices:
-              - kissbox-lift-groep-002
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning on powerrelay
-            objective: poweron
-            devices:
               - kissbox-lift-groep-004
           - objective: delay
             description: Waiting for 2 seconds
@@ -271,13 +264,6 @@ collections:
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning off powerrelay
-            objective: poweroff
-            devices:
-              - kissbox-lift-groep-002
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
