@@ -229,17 +229,17 @@ collections:
           - objective: delay
             description: Waiting for 5 seconds
             time: 5
-          # - description: Turning off powerrelay
-          #   objective: poweroff
-          #   devices:
-          #     - kissbox-mer-groep-001
-          # - objective: delay
-          #   description: Waiting for 2 seconds
-          #   time: 2
-          # - description: Turning off powerrelay
-          #   objective: poweroff
-          #   devices:
-          #     - kissbox-mer-groep-002
+          - description: Turning off powerrelay
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-001
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning off powerrelay
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-002
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
@@ -421,3 +421,49 @@ collections:
             objective: poweroff
             devices:
             - kissbox-ser-groep-001
+
+  werkverlichting:
+    name: T.rex in Town werkverlichting
+    type: exhibition
+    state: enabled
+    actions:
+      poweron:
+        description: Turn on the werkverlichting in the T.rex in Town exhibition
+        blocking: true
+        sequence:
+          - description: Turning on powerrelay
+            objective: poweron
+            devices:
+              - kissbox-lift-groep-003
+              - kissbox-mer-groep-001
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on powerrelay
+            objective: poweron
+            devices:
+              - kissbox-lift-groep-001
+              - kissbox-mer-groep-002
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+      poweroff:
+        description: Turn on the werkverlichting in the T.rex in Town exhibition
+        blocking: true
+        sequence:
+          - description: Turning on powerrelay
+            objective: poweroff
+            devices:
+              - kissbox-lift-groep-003
+              - kissbox-mer-groep-001
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on powerrelay
+            objective: poweroff
+            devices:
+              - kissbox-lift-groep-001
+              - kissbox-mer-groep-002
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
