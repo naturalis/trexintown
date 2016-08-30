@@ -224,7 +224,7 @@ collections:
               - interactive-gym-001
               - interactive-dance-001
               - interactive-medischdossier-001
-              - videoplayer-001
+              #- videoplayer-001
               - videoplayer-002
           - objective: delay
             description: Waiting for 5 seconds
