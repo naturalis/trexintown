@@ -72,12 +72,12 @@ devices:
 
   kissbox-mer-groep-001:
     type: powerrelay
-    description: Loopverlichting NIC 1
+    description: Werkverlichting Dinosafari 1 (phl.e00.04.00)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 1
-    channel: 1
+    slot: 0
+    channel: 0
     actions:
       - poweron
       - poweroff
@@ -85,77 +85,82 @@ devices:
 
   kissbox-mer-groep-002:
     type: powerrelay
-    description: Loopverlichting NIC 2
+    description: Werkverlichting Dinosafari 2 (phl.e00.05.00)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 1
-    channel: 2
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  kissbox-mer-groep-003:
-    type: powerrelay
-    description: Balie NIC 1, Wandverlichting NIC 1, Vitrine verlichting NIC 2
-    ip: 172.16.75.11
-    mac: 00:e0:6b:7e:ff:8a
-    state: enabled
-    slot: 1
-    channel: 3
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  kissbox-mer-groep-004:
-    type: powerrelay
-    description: Dimmer 1 NIC 1, Dimmer 2 NIC 1
-    ip: 172.16.75.11
-    mac: 00:e0:6b:7e:ff:8a
-    state: enabled
-    slot: 1
-    channel: 4
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  kissbox-mer-groep-005:
-    type: powerrelay
-    description: Wandverlichting NIC 2, Vitrineverlichting NIC 2
-    ip: 172.16.75.11
-    mac: 00:e0:6b:7e:ff:8a
-    state: enabled
-    slot: 2
+    slot: 0
     channel: 1
     actions:
       - poweron
       - poweroff
       - status
 
-  kissbox-mer-groep-006:
+  kissbox-mer-groep-003:
+    # Nog niets gezien
     type: powerrelay
-    description: Dimmer 3 NIC 2, Dimmer 4 NIC 2
+    description: Balie Dinosafari 1, Wandverlichting Dinosafari 1 (phl.e00.04.00) + Vitrine verlichting Dinosafari 2 (phl.e00.05.00)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 2
+    slot: 0
     channel: 2
     actions:
       - poweron
       - poweroff
       - status
 
-  kissbox-mer-groep-007:
+  kissbox-mer-groep-004:
+    # Nog niets gezien
     type: powerrelay
-    description: Verlichting entresol NIC
+    description: Dimmer 1 Dinosafari 1, Dimmer 2 Dinosafari 1 (phl.e00.04.00)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 2
+    slot: 0
     channel: 3
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-005:
+    # Nog niets gezien
+    type: powerrelay
+    description: Wandverlichting NIC 2, Vitrineverlichting NIC 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 1
+    channel: 0
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-006:
+    # Nog niets gezien
+    type: powerrelay
+    description: Dimmer 3 NIC 2, Dimmer 4 NIC 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 1
+    channel: 1
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  kissbox-mer-groep-007:
+    # Nog niets gezien
+    type: powerrelay
+    description: Verlichting entresol Dinosafari 2
+    ip: 172.16.75.11
+    mac: 00:e0:6b:7e:ff:8a
+    state: enabled
+    slot: 1
+    channel: 2
     actions:
       - poweron
       - poweroff
@@ -163,38 +168,40 @@ devices:
 
   kissbox-mer-groep-008:
     type: powerrelay
-    description: Stekkerdoos spanningsrail (groep 27)
+    description: Stekkerdoos spanningsrail (groep 27) / Blauwe lichtjes boven spots Dinosafari 2
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 2
-    channel: 4
+    slot: 1
+    channel: 3
     actions:
       - poweron
       - poweroff
       - status
 
   kissbox-mer-groep-009:
+    # Nog niets gezien
     type: powerrelay
     description: Stekkerdoos spanningsrail (groep 40)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 3
-    channel: 1
+    slot: 2
+    channel: 0
     actions:
       - poweron
       - poweroff
       - status
 
   kissbox-mer-groep-010:
+    # Nog niets gezien
     type: powerrelay
     description: ASP (groep 29)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 3
-    channel: 2
+    slot: 2
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -206,21 +213,22 @@ devices:
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 3
-    channel: 3
+    slot: 2
+    channel: 2
     actions:
       - poweron
       - poweroff
       - status
 
   kissbox-mer-groep-012:
+    # Nog niets gezien
     type: powerrelay
     description: Compressor
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
-    slot: 3
-    channel: 4
+    slot: 2
+    channel: 3
     actions:
       - poweron
       - poweroff
@@ -235,13 +243,14 @@ devices:
     mac: 00:e0:6b:7e:ff:7a
 
   kissbox-lift-groep-001:
+    # Maar een paar werklampen lijken te werken.
     type: powerrelay
-    description: Loopverlichting café
+    description: Werkverlichting Restaurant + Dinolab
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
-    slot: 1
-    channel: 1
+    slot: 0
+    channel: 0
     actions:
       - poweron
       - poweroff
@@ -249,12 +258,12 @@ devices:
 
   kissbox-lift-groep-002:
     type: powerrelay
-    description: Loopverlichting filmzaal
+    description: Werkverlichting Dino-doe-dingen (phl.e00.10.00)
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
-    slot: 1
-    channel: 2
+    slot: 0
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -262,38 +271,40 @@ devices:
 
   kissbox-lift-groep-003:
     type: powerrelay
-    description: Loopverlichting tijdelijke tentoonstelling
+    description: Werkverlichting Trix (phl.e00.06.00)
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
-    slot: 1
-    channel: 3
+    slot: 0
+    channel: 2
     actions:
       - poweron
       - poweroff
       - status
 
   kissbox-lift-groep-004:
+    # Nog niets te zien
     type: powerrelay
     description: Tijdelijke tentoonstelling spanningsrail 3
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
-    slot: 1
-    channel: 4
+    slot: 0
+    channel: 3
     actions:
       - poweron
       - poweroff
       - status
 
   kissbox-lift-groep-005:
+    # Nog niets te zien
     type: powerrelay
     description: Tijdelijke tentoonstelling spanningsrail 4
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
-    slot: 2
-    channel: 1
+    slot: 1
+    channel: 0
     actions:
       - poweron
       - poweroff
@@ -305,8 +316,8 @@ devices:
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
-    slot: 2
-    channel: 2
+    slot: 1
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -326,8 +337,8 @@ devices:
     ip: 172.16.75.13
     mac: 00:e0:6b:7e:ff:4d
     state: enabled
-    slot: 1
-    channel: 1
+    slot: 0
+    channel: 0
     actions:
       - poweron
       - poweroff
@@ -335,38 +346,12 @@ devices:
 
   kissbox-ser-groep-002:
     type: powerrelay
-    description: Dimmerkast
+    description: Reserve
     ip: 172.16.75.13
     mac: 00:e0:6b:7e:ff:4d
     state: enabled
-    slot: 1
-    channel: 2
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  kissbox-ser-groep-003:
-    type: powerrelay
-    description: Dimmerkast
-    ip: 172.16.75.13
-    mac: 00:e0:6b:7e:ff:4d
-    state: enabled
-    slot: 1
-    channel: 3
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  kissbox-ser-groep-004:
-    type: powerrelay
-    description: Dimmerkast
-    ip: 172.16.75.13
-    mac: 00:e0:6b:7e:ff:4d
-    state: enabled
-    slot: 1
-    channel: 4
+    slot: 0
+    channel: 1
     actions:
       - poweron
       - poweroff
@@ -448,7 +433,7 @@ devices:
 
   videoplayer-002:
     type: linux
-    barcode: dt005877
+    barcode: dt005864
     description: Videoplayer Anne Schulp 2
     ip: 172.16.75.20
     mac: dc:fe:07:e0:ec:f1
