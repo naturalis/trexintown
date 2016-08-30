@@ -71,20 +71,6 @@ collections:
           - description: Turning on powerrelay
             objective: poweron
             devices:
-              - kissbox-mer-groep-001
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning on powerrelay
-            objective: poweron
-            devices:
-              - kissbox-mer-groep-002
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning on powerrelay
-            objective: poweron
-            devices:
               - kissbox-mer-groep-003
           - objective: delay
             description: Waiting for 2 seconds
@@ -148,21 +134,7 @@ collections:
           - description: Turning on powerrelay
             objective: poweron
             devices:
-              - kissbox-lift-groep-001
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning on powerrelay
-            objective: poweron
-            devices:
               - kissbox-lift-groep-002
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning on powerrelay
-            objective: poweron
-            devices:
-              - kissbox-lift-groep-003
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
@@ -214,7 +186,7 @@ collections:
             description: Waiting for 120 seconds
             time: 120
       poweroff:
-        description: Turn on the T.rex in Test exhibition
+        description: Turn off the T.rex in Test exhibition
         blocking: true
         sequence:
           - description: Turning on all computers
@@ -229,20 +201,6 @@ collections:
           - objective: delay
             description: Waiting for 5 seconds
             time: 5
-          - description: Turning off powerrelay
-            objective: poweroff
-            devices:
-              - kissbox-mer-groep-001
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning off powerrelay
-            objective: poweroff
-            devices:
-              - kissbox-mer-groep-002
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
           - description: Turning off powerrelay
             objective: poweroff
             devices:
@@ -312,21 +270,7 @@ collections:
           - description: Turning off powerrelay
             objective: poweroff
             devices:
-              - kissbox-lift-groep-001
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning off powerrelay
-            objective: poweroff
-            devices:
               - kissbox-lift-groep-002
-          - objective: delay
-            description: Waiting for 2 seconds
-            time: 2
-          - description: Turning off powerrelay
-            objective: poweroff
-            devices:
-              - kissbox-lift-groep-003
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
