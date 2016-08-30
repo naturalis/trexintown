@@ -399,6 +399,9 @@ collections:
         description: Turn off the T.rex doe dingen exhibition
         blocking: true
         sequence:
+          - objective: delay
+            description: waiting for 60 seconds
+            time: 60
           - description: Turning on all computers
             objective: poweroff
             devices:
@@ -408,10 +411,10 @@ collections:
               - interactive-medischdossier-001
               #- videoplayer-001
               - videoplayer-002
+          - objective: delay
+            description: waiting for 60 seconds
+            time: 60
           - description: Turning on kissbox # stage one
             objective: poweroff
             devices:
             - kissbox-ser-groep-001
-          - objective: delay
-            description: waiting for 3 seconds
-            time: 3
