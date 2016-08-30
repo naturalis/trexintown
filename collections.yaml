@@ -321,8 +321,8 @@ collections:
             devices:
               - kissbox-mer-groep-012
           - objective: delay
-            description: Waiting for 60 seconds
-            time: 60
+            description: Waiting for 300 seconds
+            time: 300
 
   trex-doe-dingen:
     name: T.rex doe dingen
