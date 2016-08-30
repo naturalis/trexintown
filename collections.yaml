@@ -199,8 +199,15 @@ collections:
               #- videoplayer-001
               - videoplayer-002
           - objective: delay
-            description: Waiting for 5 seconds
-            time: 5
+            description: Waiting for 30 seconds
+            time: 30
+          - description: Turning on werkverlichting Trix
+            objective: poweron
+            devices:
+              - kissbox-lift-groep-003
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
           - description: Turning off powerrelay
             objective: poweroff
             devices:
