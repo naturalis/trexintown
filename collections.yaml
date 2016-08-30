@@ -398,6 +398,13 @@ collections:
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
+          - description: Turning on powerrelay
+            objective: poweron
+            devices:
+              - kissbox-lift-groep-002
+          - objective: delay
+            description: Waiting for 300 seconds
+            time: 300
       poweroff:
         description: Turn on the werkverlichting in the T.rex in Town exhibition
         blocking: true
@@ -418,3 +425,10 @@ collections:
           - objective: delay
             description: Waiting for 2 seconds
             time: 2
+          - description: Turning on powerrelay
+            objective: poweroff
+            devices:
+              - kissbox-lift-groep-002
+          - objective: delay
+            description: Waiting for 300 seconds
+            time: 300
