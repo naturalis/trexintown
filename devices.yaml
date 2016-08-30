@@ -168,7 +168,7 @@ devices:
 
   kissbox-mer-groep-008:
     type: powerrelay
-    description: Stekkerdoos spanningsrail (groep 27) / Blauwe lichtjes boven spots Dinosafari 2
+    description: Stekkerdoos spanningsrail (groep 27) / LED belichting Dinosafari 2
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -182,7 +182,7 @@ devices:
   kissbox-mer-groep-009:
     # Nog niets gezien
     type: powerrelay
-    description: Stekkerdoos spanningsrail (groep 40)
+    description: Stekkerdoos spanningsrail (groep 40) / LED belichting Dinosafari 1?
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -285,7 +285,7 @@ devices:
   kissbox-lift-groep-004:
     # Nog niets te zien
     type: powerrelay
-    description: Tijdelijke tentoonstelling spanningsrail 3
+    description: Tijdelijke tentoonstelling spanningsrail 3 / T.rex zaal?
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
@@ -299,7 +299,7 @@ devices:
   kissbox-lift-groep-005:
     # Nog niets te zien
     type: powerrelay
-    description: Tijdelijke tentoonstelling spanningsrail 4
+    description: Tijdelijke tentoonstelling spanningsrail 4 / T.rex doe dingen?
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
@@ -333,7 +333,7 @@ devices:
 
   kissbox-ser-groep-001:
     type: powerrelay
-    description: Dimmerkast
+    description: T.rex doe dingen exhibits
     ip: 172.16.75.13
     mac: 00:e0:6b:7e:ff:4d
     state: enabled
