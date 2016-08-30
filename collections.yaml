@@ -369,3 +369,29 @@ collections:
           - objective: delay
             description: Waiting for 120 seconds
             time: 120
+
+  trex-doe-dingen:
+    name: T.rex doe dingen
+    type: exhibition
+    state: enabled
+    actions:
+      poweron:
+        description: Turn on the T.rex doe dingen exhibition
+        blocking: true
+        sequence:
+          - description: Turning on kissbox # stage one
+            objective: poweron
+            devices:
+            - kissbox-ser-groep-001
+          - objective: delay
+            description: waiting for 3 seconds
+            time: 3
+          - description: Turning on all computers
+            objective: poweron
+            devices:
+              - interactive-graffiti-001
+              - interactive-gym-001
+              - interactive-dance-001
+              - interactive-medischdossier-001
+              - videoplayer-001
+              - videoplayer-002
