@@ -2,72 +2,21 @@
 
 collections:
   trex-in-town:
-    name: T.rex in Town
+    name: T.rex in Town exhibition
     type: exhibition
     state: enabled
     actions:
       poweron:
-        description: turn on the trex in down exhibition
+        description: Turn on the T.rex in Town exhibition
         blocking: true
         sequence:
-          - objective: delay
-            description: waiting for 3 seconds
-            time: 5
-          - description: turning on kissboxes # stage one
-            objective: poweron
-            devices:
-            - powerrelay-001
-            - powerrelay-002
-          - objective: delay
-            description: waiting for 3 seconds
-            time: 5
-          - description: turing on all computers
-            objective: poweron
-            devices:
-              - powerrelay-003
-              - powerrelay-004
-              - interactive-gym-001
-
-  beamers-trex:
-    name: Beamers T.rex in Town
-    type: set
-    actions:
-      poweron:
-        description: turn on the trex in down exhibition
-        blocking: false
-        sequence:
-          - description: turning on kissboxes # stage one
-            objective: poweron
-            devices:
-            - kissbox-from-a
-            - <other ids>- objective: delay
-            description: waiting for 3 seconds
-            time: 23
-          - objective: delay
-            description: waiting for 3 seconds
-            time: 3
-          - description: turing on all computers
-            objective: poweron
-            devices:
-              - computer-a
-              - computer-b
-              - beamer-a
-  trex-in-test:
-    name: T.rex in Test
-    type: exhibition
-    state: enabled
-    actions:
-      poweron:
-        description: turn on the trex in test exhibition
-        blocking: true
-        sequence:
-          - description: Turning on powerrelay
-            objective: poweron
-            devices:
-              - kissbox-mer-groep-012
-          - objective: delay
-            description: Waiting for 300 seconds
-            time: 300
+          # - description: Turning on powerrelay
+          #   objective: poweron
+          #   devices:
+          #     - kissbox-mer-groep-012
+          # - objective: delay
+          #   description: Waiting for 300 seconds
+          #   time: 300
           - description: Turning on powerrelay
             objective: poweron
             devices:
@@ -189,8 +138,8 @@ collections:
               - interactive-gym-001
               - interactive-dance-001
               - interactive-medischdossier-001
-              #- videoplayer-001
-              - videoplayer-002
+              # - videoplayer-001
+              # - videoplayer-002
           - objective: delay
             description: Waiting for 30 seconds
             time: 30
