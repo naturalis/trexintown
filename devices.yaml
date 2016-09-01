@@ -1,10 +1,10 @@
 # YAML file defining all devices.
 # ID should be unique
-# eticket-001:
+# device-001:
 #   type: computer
 #   barcode: dt000000
-#   description: E-ticketzuil
-#   ip: 172.16.75.22
+#   description: Device
+#   ip: 172.16.75.222
 #   mac: 00:00:00:00
 #   actions:
 #     - poweron
@@ -480,37 +480,25 @@ devices:
       - poweroff
       - status
 
-  # Tests
-  linux-test-001:
+  # E-ticket
+  eticket-001:
     type: linux
-    barcode: dt005864
-    description: Test NUC
-    ip: 172.16.75.251
-    mac: dc:fe:07:e0:ec:f1
+    barcode: dt000000
+    description: E-ticketzuil
+    ip: 172.16.75.24
+    mac: 00:00:00:00:00:00
     state: enabled
     actions:
       - poweron
       - poweroff
       - status
 
-  linux-test-002:
+  eticket-002:
     type: linux
-    barcode: sr001234
-    description: Test OpenStack instance
-    ip: 145.136.241.48
-    mac: dc:fe:07:e0:ec:00
-    state: enabled
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  windows-test-001:
-    type: windows
-    barcode: dt005878
-    description: Test NUC
-    ip: 172.16.75.250
-    mac: dc:fe:07:e0:ec:97
+    barcode: dt000000
+    description: E-ticketzuil
+    ip: 172.16.75.25
+    mac: 00:00:00:00:00:00
     state: enabled
     actions:
       - poweron
