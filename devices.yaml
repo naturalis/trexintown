@@ -469,11 +469,11 @@ devices:
 
   videoplayer-005:
     type: linux
-    barcode: dt000000
+    barcode: dt005877
     description: Videoplayer T.rex docu
     ip: 172.16.75.23
     actions:
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:d6
     state: enabled
     actions:
       - poweron
