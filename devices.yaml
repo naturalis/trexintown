@@ -423,7 +423,7 @@ devices:
     barcode: dt005864
     description: Bottenapp
     ip: 172.16.75.18
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:f1
     state: enabled
     actions:
       - poweron
