@@ -448,7 +448,7 @@ devices:
     barcode: dt005864
     description: Videoplayer Anne Schulp 2
     ip: 172.16.75.20
-    mac: dc:fe:07:e0:ec:f1
+    mac: dc:fe:07:e0:ec:c5
     state: enabled
     actions:
       - poweron
