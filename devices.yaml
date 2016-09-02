@@ -498,7 +498,7 @@ devices:
     barcode: dt000000
     description: E-ticket checkin zuil
     ip: 172.16.75.24
-    mac: 00:00:00:00:00:00
+    mac: 2c:94:64:00:3c:f1
     state: enabled
     actions:
       - poweron
