@@ -382,6 +382,18 @@ devices:
       - poweroff
       - status
 
+  interactive-gym-002:
+    type: windows
+    barcode: dt005874
+    description: T.rex gym interactive
+    ip: 172.16.75.238
+    mac: 40:8d:5c:b3:8b:43
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
   interactive-dance-001:
     type: windows
     barcode: dt005872
@@ -421,10 +433,10 @@ devices:
   # Videoplayers
   videoplayer-001:
     type: linux
-    barcode: dt005878
+    barcode: dt000000
     description: Videoplayer Anne Schulp 1
     ip: 172.16.75.19
-    mac: dc:fe:07:e0:ec:97
+    mac: dc:fe:07:e0:ec:cd
     state: enabled
     actions:
       - poweron
@@ -460,7 +472,7 @@ devices:
     barcode: dt005879
     description: Videoplayer Anne Schulp 4
     ip: 172.16.75.22
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:a1
     state: enabled
     actions:
       - poweron
@@ -481,10 +493,10 @@ devices:
       - status
 
   # E-ticket
-  eticket-001:
+  eticket-checkin-001:
     type: linux
     barcode: dt000000
-    description: E-ticketzuil
+    description: E-ticket checkin zuil
     ip: 172.16.75.24
     mac: 00:00:00:00:00:00
     state: enabled
@@ -493,10 +505,10 @@ devices:
       - poweroff
       - status
 
-  eticket-002:
+  eticket-checkin-002:
     type: linux
     barcode: dt000000
-    description: E-ticketzuil
+    description: E-ticket checkin zuil
     ip: 172.16.75.25
     mac: 00:00:00:00:00:00
     state: enabled
