@@ -423,7 +423,7 @@ devices:
     barcode: dt005864
     description: Bottenapp
     ip: 172.16.75.18
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:f1
     state: enabled
     actions:
       - poweron
@@ -448,7 +448,7 @@ devices:
     barcode: dt005864
     description: Videoplayer Anne Schulp 2
     ip: 172.16.75.20
-    mac: dc:fe:07:e0:ec:f1
+    mac: dc:fe:07:e0:ec:c5
     state: enabled
     actions:
       - poweron
@@ -460,7 +460,7 @@ devices:
     barcode: dt005880
     description: Videoplayer Anne Schulp 3
     ip: 172.16.75.21
-    mac: 00:00:00:00
+    mac: dc:fe:07:e0:ec:d8
     state: enabled
     actions:
       - poweron
