@@ -127,7 +127,7 @@ devices:
   kissbox-mer-groep-005:
     # Nog niets gezien
     type: powerrelay
-    description: Wandverlichting NIC 2, Vitrineverlichting NIC 2
+    description: Wandverlichting Dinosafari 2, Vitrineverlichting Dinosafari 2
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -141,7 +141,7 @@ devices:
   kissbox-mer-groep-006:
     # Nog niets gezien
     type: powerrelay
-    description: Dimmer 3 NIC 2, Dimmer 4 NIC 2
+    description: Dimmer 3 Dinosafari 2, Dimmer 4 Dinosafari 2
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -357,7 +357,7 @@ devices:
       - poweroff
       - status
 
-  # Interactives
+    # Interactives
   interactive-graffiti-001:
     type: windows
     barcode: dt005873
@@ -498,7 +498,7 @@ devices:
     barcode: dt000000
     description: E-ticket checkin zuil
     ip: 172.16.75.24
-    mac: 00:00:00:00:00:00
+    mac: 2c:94:64:00:3c:f1
     state: enabled
     actions:
       - poweron
@@ -511,6 +511,19 @@ devices:
     description: E-ticket checkin zuil
     ip: 172.16.75.25
     mac: 00:00:00:00:00:00
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  # Test
+  videoplayer-test-001:
+    type: linux
+    barcode: dt004804
+    description: Test videoplayer
+    ip: 172.16.75.26
+    mac: ec:a8:6b:ff:bb:52
     state: enabled
     actions:
       - poweron
