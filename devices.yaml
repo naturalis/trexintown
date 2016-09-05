@@ -433,7 +433,7 @@ devices:
   # Videoplayers
   videoplayer-001:
     type: linux
-    barcode: dt000000
+    barcode: dt005914
     description: Videoplayer Anne Schulp 1
     ip: 172.16.75.19
     mac: dc:fe:07:e0:ec:cd
@@ -445,7 +445,7 @@ devices:
 
   videoplayer-002:
     type: linux
-    barcode: dt005864
+    barcode: dt005915
     description: Videoplayer Anne Schulp 2
     ip: 172.16.75.20
     mac: dc:fe:07:e0:ec:c5
