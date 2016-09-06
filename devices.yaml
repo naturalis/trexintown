@@ -375,7 +375,7 @@ devices:
     barcode: dt005874
     description: T.rex gym interactive
     ip: 172.16.75.15
-    mac: 40:8d:5c:81:9a:e5
+    mac: 40:8d:5c:b3:8b:41
     state: enabled
     actions:
       - poweron
