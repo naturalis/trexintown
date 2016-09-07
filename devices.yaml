@@ -372,22 +372,10 @@ devices:
 
   interactive-gym-001:
     type: windows
-    barcode: dt005874
+    barcode: dt005916
     description: T.rex gym interactive
     ip: 172.16.75.15
-    mac: 40:8d:5c:81:9a:e5
-    state: enabled
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  interactive-gym-002:
-    type: windows
-    barcode: dt005874
-    description: T.rex gym interactive
-    ip: 172.16.75.238
-    mac: 40:8d:5c:b3:8b:43
+    mac: 40:8d:5c:b3:8b:41
     state: enabled
     actions:
       - poweron
@@ -507,10 +495,10 @@ devices:
 
   eticket-checkin-002:
     type: linux
-    barcode: dt000000
+    barcode: dt005876
     description: E-ticket checkin zuil
     ip: 172.16.75.25
-    mac: 00:00:00:00:00:00
+    mac: 2c:94:64:00:3f:66
     state: enabled
     actions:
       - poweron
@@ -524,6 +512,18 @@ devices:
     description: Test videoplayer
     ip: 172.16.75.26
     mac: ec:a8:6b:ff:bb:52
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  stargazer-test-001:
+    type: linux
+    barcode: dt005878
+    description: Test videoplayer
+    ip: 172.16.75.27
+    mac: dc:fe:07:e0:ec:97
     state: enabled
     actions:
       - poweron
