@@ -350,7 +350,7 @@ collections:
             description: Waiting for 1 seconds
             time: 1
           - description: Turning on animatronics Dinosafari 1 (eiland 1)
-            objective: poweroff
+            objective: poweron
             devices:
               - kissbox-mer-groep-010
           - description: Turning on the compressor and all videoplayers
