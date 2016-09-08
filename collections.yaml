@@ -335,6 +335,13 @@ collections:
         description: Power on all animatronics and videoplayers in dinosafari
         blocking: true
         sequence:
+          - description: Turning on the compressor
+            objective: poweron
+            devices:
+              - kissbox-mer-groep-012
+          - objective: delay
+            description: Waiting for 240 seconds
+            time: 240
           - description: Turning on animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
             objective: poweron
             devices:
@@ -353,17 +360,16 @@ collections:
             objective: poweron
             devices:
               - kissbox-mer-groep-010
-          - description: Turning on the compressor and all videoplayers
+          - description: Turning on all videoplayers
             objective: poweron
             devices:
-              - kissbox-mer-groep-012
               - videoplayer-001
               - videoplayer-002
               - videoplayer-003
               - videoplayer-004
           - objective: delay
-            description: Waiting for 300 seconds
-            time: 300
+            description: Waiting for 30 seconds
+            time: 30
       poweroff:
         description: Poweroff all animatronics and videoplayers in dinosafari
         blocking: true
@@ -372,13 +378,9 @@ collections:
             objective: poweroff
             devices:
               - kissbox-mer-groep-012
-              - videoplayer-001
-              - videoplayer-002
-              - videoplayer-003
-              - videoplayer-004
           - objective: delay
-            description: Waiting for 1 seconds
-            time: 1
+            description: Waiting for 240 seconds
+            time: 240
           - description: Turning off animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
             objective: poweroff
             devices:
@@ -397,6 +399,10 @@ collections:
             objective: poweroff
             devices:
               - kissbox-mer-groep-010
-          - objective: delay
-            description: Waiting for 300 seconds
-            time: 300
+          - description: Turning off all videoplayers
+            objective: poweroff
+            devices:
+              - videoplayer-001
+              - videoplayer-002
+              - videoplayer-003
+              - videoplayer-004
