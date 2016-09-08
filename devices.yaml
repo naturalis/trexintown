@@ -99,7 +99,7 @@ devices:
   kissbox-mer-groep-003:
     # Nog niets gezien
     type: powerrelay
-    description: Balie Dinosafari 1, Wandverlichting Dinosafari 1 (phl.e00.04.00) + Vitrine verlichting Dinosafari 2 (phl.e00.05.00)
+    description: Animatronics Dinosafari 1 (eiland 2) + Achtergrondgeluid Dinosafari 1 + videoplayer-002 (Wandverlichting Dinosafari 1 (phl.e00.04.00) + Vitrine verlichting Dinosafari 2 (phl.e00.05.00))
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -113,7 +113,7 @@ devices:
   kissbox-mer-groep-004:
     # Nog niets gezien
     type: powerrelay
-    description: Dimmer 1 Dinosafari 1, Dimmer 2 Dinosafari 1 (phl.e00.04.00)
+    description: Gewone, wit-gele spots Dinosafari 1 (Dimmer 1 Dinosafari 1, Dimmer 2 Dinosafari 1 (phl.e00.04.00))
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -127,7 +127,7 @@ devices:
   kissbox-mer-groep-005:
     # Nog niets gezien
     type: powerrelay
-    description: Wandverlichting Dinosafari 2, Vitrineverlichting Dinosafari 2
+    description: Animatronics Dinosafari 2 (eiland 1 en 2) + Achtergrondgeluid Dinosafari 2 + Videoplayers 003 en 004 (Wandverlichting Dinosafari 2, Vitrineverlichting Dinosafari 2)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -141,7 +141,7 @@ devices:
   kissbox-mer-groep-006:
     # Nog niets gezien
     type: powerrelay
-    description: Dimmer 3 Dinosafari 2, Dimmer 4 Dinosafari 2
+    description: Gewone, wit-gele spots Dinosafari 1 (Dimmer 3 Dinosafari 2, Dimmer 4 Dinosafari 2)
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -168,7 +168,7 @@ devices:
 
   kissbox-mer-groep-008:
     type: powerrelay
-    description: Stekkerdoos spanningsrail (groep 27) / LED belichting Dinosafari 2
+    description: LED belichting Dinosafari 2 (Stekkerdoos spanningsrail (groep 27))
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -182,7 +182,7 @@ devices:
   kissbox-mer-groep-009:
     # Nog niets gezien
     type: powerrelay
-    description: Stekkerdoos spanningsrail (groep 40) / LED belichting Dinosafari 1?
+    description: LED belichting Dinosafari 1 (Stekkerdoos spanningsrail (groep 40))
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled
@@ -196,7 +196,7 @@ devices:
   kissbox-mer-groep-010:
     # Nog niets gezien
     type: powerrelay
-    description: ASP (groep 29)
+    description: Animatronics Dinosafari 1 (eiland 1) + videoplayer-001 (ASP (groep 29))
     ip: 172.16.75.11
     mac: 00:e0:6b:7e:ff:8a
     state: enabled

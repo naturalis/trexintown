@@ -325,3 +325,78 @@ collections:
           - objective: delay
             description: Waiting for 300 seconds
             time: 300
+
+  animatronics:
+    name: Animatronics
+    type: exhibition
+    state: enabled
+    actions:
+      poweron:
+        description: Power on all animatronics and videoplayers in dinosafari
+        blocking: true
+        sequence:
+          - description: Turning on animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
+            objective: poweron
+            devices:
+              - kissbox-mer-groep-005
+          - objective: delay
+            description: Waiting for 1 seconds
+            time: 1
+          - description: Turning on animatronics Dinosafari 1 (eiland 2) + achtergrondgeluid Dinosafari 1
+            objective: poweron
+            devices:
+              - kissbox-mer-groep-003
+          - objective: delay
+            description: Waiting for 1 seconds
+            time: 1
+          - description: Turning on animatronics Dinosafari 1 (eiland 1)
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-010
+          - description: Turning on the compressor and all videoplayers
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-012
+              - videoplayer-001
+              - videoplayer-002
+              - videoplayer-003
+              - videoplayer-004
+          - objective: delay
+            description: Waiting for 300 seconds
+            time: 300
+      poweroff:
+        description: Poweroff all animatronics and videoplayers in dinosafari
+        blocking: true
+        sequence:
+          - description: Turning off the compressor and all videoplayers
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-012
+              - videoplayer-001
+              - videoplayer-002
+              - videoplayer-003
+              - videoplayer-004
+          - objective: delay
+            description: Waiting for 1 seconds
+            time: 1
+          - description: Turning off animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-005
+          - objective: delay
+            description: Waiting for 1 seconds
+            time: 1
+          - description: Turning off animatronics Dinosafari 1 (eiland 2) + achtergrondgeluid Dinosafari 1
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-003
+          - objective: delay
+            description: Waiting for 1 seconds
+            time: 1
+          - description: Turning off animatronics Dinosafari 1 (eiland 1)
+            objective: poweroff
+            devices:
+              - kissbox-mer-groep-010
+          - objective: delay
+            description: Waiting for 300 seconds
+            time: 300
