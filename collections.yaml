@@ -266,55 +266,6 @@ collections:
             description: Waiting for 300 seconds
             time: 300
 
-  trex-doe-dingen:
-    name: T.rex doe dingen
-    type: exhibition
-    state: enabled
-    actions:
-      poweron:
-        description: Turn on the T.rex doe dingen exhibition
-        blocking: true
-        sequence:
-          - description: Turning on kissbox # stage one
-            objective: poweron
-            devices:
-            - kissbox-ser-groep-001
-          - objective: delay
-            description: waiting for 3 seconds
-            time: 3
-          - description: Turning on all computers
-            objective: poweron
-            devices:
-              - interactive-graffiti-001
-              - interactive-gym-001
-              - interactive-dance-001
-              - interactive-medischdossier-001
-              - videoplayer-001
-              - videoplayer-002
-      poweroff:
-        description: Turn off the T.rex doe dingen exhibition
-        blocking: true
-        sequence:
-          - objective: delay
-            description: waiting for 60 seconds
-            time: 60
-          - description: Turning on all computers
-            objective: poweroff
-            devices:
-              - interactive-graffiti-001
-              - interactive-gym-001
-              - interactive-dance-001
-              - interactive-medischdossier-001
-              #- videoplayer-001
-              - videoplayer-002
-          - objective: delay
-            description: waiting for 60 seconds
-            time: 60
-          - description: Turning on kissbox # stage one
-            objective: poweroff
-            devices:
-            - kissbox-ser-groep-001
-
   werkverlichting:
     name: T.rex in Town werkverlichting
     type: exhibition
