@@ -354,7 +354,7 @@ collections:
             devices:
               - kissbox-mer-groep-010
           - description: Turning on the compressor and all videoplayers
-            objective: poweroff
+            objective: poweron
             devices:
               - kissbox-mer-groep-012
               - videoplayer-001
