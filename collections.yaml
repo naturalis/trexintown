@@ -340,8 +340,8 @@ collections:
             devices:
               - kissbox-mer-groep-012
           - objective: delay
-            description: Waiting for 240 seconds
-            time: 240
+            description: Waiting for 2 seconds
+            time: 2
           - description: Turning on animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
             objective: poweron
             devices:
@@ -360,13 +360,93 @@ collections:
             objective: poweron
             devices:
               - kissbox-mer-groep-010
+          - objective: delay
+            description: Waiting for 1 seconds
+            time: 1
           - description: Turning on all videoplayers
             objective: poweron
             devices:
               - videoplayer-001
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
               - videoplayer-002
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
               - videoplayer-003
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
               - videoplayer-004
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-001
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-002
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-003
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-004
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-001
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-002
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-003
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - description: Turning on all videoplayers
+            objective: poweron
+            devices:
+              - videoplayer-004
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
           - objective: delay
             description: Waiting for 30 seconds
             time: 30
