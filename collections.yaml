@@ -458,6 +458,13 @@ collections:
             objective: poweroff
             devices:
               - kissbox-mer-groep-012
+          - description: Turning off all videoplayers
+            objective: poweroff
+            devices:
+              - videoplayer-001
+              - videoplayer-002
+              - videoplayer-003
+              - videoplayer-004
           - objective: delay
             description: Waiting for 240 seconds
             time: 240
@@ -479,10 +486,3 @@ collections:
             objective: poweroff
             devices:
               - kissbox-mer-groep-010
-          - description: Turning off all videoplayers
-            objective: poweroff
-            devices:
-              - videoplayer-001
-              - videoplayer-002
-              - videoplayer-003
-              - videoplayer-004
