@@ -97,7 +97,6 @@ devices:
       - status
 
   kissbox-mer-groep-003:
-    # Nog niets gezien
     type: powerrelay
     description: Animatronics Dinosafari 1 (eiland 2) + Achtergrondgeluid Dinosafari 1 + videoplayer-002 (Wandverlichting Dinosafari 1 (phl.e00.04.00) + Vitrine verlichting Dinosafari 2 (phl.e00.05.00))
     ip: 172.16.75.11
@@ -111,7 +110,6 @@ devices:
       - status
 
   kissbox-mer-groep-004:
-    # Nog niets gezien
     type: powerrelay
     description: Gewone, wit-gele spots Dinosafari 1 (Dimmer 1 Dinosafari 1, Dimmer 2 Dinosafari 1 (phl.e00.04.00))
     ip: 172.16.75.11
@@ -125,7 +123,6 @@ devices:
       - status
 
   kissbox-mer-groep-005:
-    # Nog niets gezien
     type: powerrelay
     description: Animatronics Dinosafari 2 (eiland 1 en 2) + Achtergrondgeluid Dinosafari 2 + Videoplayers 003 en 004 (Wandverlichting Dinosafari 2, Vitrineverlichting Dinosafari 2)
     ip: 172.16.75.11
@@ -139,7 +136,6 @@ devices:
       - status
 
   kissbox-mer-groep-006:
-    # Nog niets gezien
     type: powerrelay
     description: Gewone, wit-gele spots Dinosafari 1 (Dimmer 3 Dinosafari 2, Dimmer 4 Dinosafari 2)
     ip: 172.16.75.11
@@ -153,7 +149,6 @@ devices:
       - status
 
   kissbox-mer-groep-007:
-    # Nog niets gezien
     type: powerrelay
     description: Verlichting entresol Dinosafari 2
     ip: 172.16.75.11
@@ -180,7 +175,6 @@ devices:
       - status
 
   kissbox-mer-groep-009:
-    # Nog niets gezien
     type: powerrelay
     description: LED belichting Dinosafari 1 (Stekkerdoos spanningsrail (groep 40))
     ip: 172.16.75.11
@@ -194,7 +188,6 @@ devices:
       - status
 
   kissbox-mer-groep-010:
-    # Nog niets gezien
     type: powerrelay
     description: Animatronics Dinosafari 1 (eiland 1) + videoplayer-001 (ASP (groep 29))
     ip: 172.16.75.11
@@ -221,7 +214,6 @@ devices:
       - status
 
   kissbox-mer-groep-012:
-    # Nog niets gezien
     type: powerrelay
     description: Compressor
     ip: 172.16.75.11
