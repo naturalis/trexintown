@@ -496,6 +496,25 @@ collections:
         description: Turn on the Dino snurk preset
         blocking: true
         sequence:
+          - description: Turning off the computers in Dino Doe dingen and Etickets
+            objective: poweroff
+            devices:
+              - interactive-graffiti-001
+              - interactive-gym-001
+              - interactive-dance-001
+              - interactive-medischdossier-001
+              - eticket-checkin-001
+              - eticket-checkin-002
+          - objective: delay
+            description: Waiting for 30 seconds
+            time: 30
+          - description: Turning off T.rex doe dingen exhibits
+            objective: poweroff
+            devices:
+              - kissbox-ser-groep-001
+          - objective: delay
+            description: Waiting for 120 seconds (for test purposes; should be 870)
+            time: 120
           - description: Turning off the compressor
             objective: poweroff
             devices:
@@ -511,17 +530,11 @@ collections:
           - description: Turning off all computers (except Ecue light computer)
             objective: poweroff
             devices:
-              - interactive-graffiti-001
-              - interactive-gym-001
-              - interactive-dance-001
-              - interactive-medischdossier-001
               - videoplayer-001
               - videoplayer-002
               - videoplayer-003
               - videoplayer-004
               - videoplayer-005
-              - eticket-checkin-001
-              - eticket-checkin-002
               - bottenapp-001
           - description: Turning off gewone, wit-gele spots Dinosafari 1
             objective: poweroff
@@ -607,10 +620,6 @@ collections:
           - objective: delay
             description: Waiting 240 seconds (for compressor)
             time: 240
-          - description: Turning off T.rex doe dingen exhibits
-            objective: poweroff
-            devices:
-              - kissbox-ser-groep-001
           - objective: delay
             description: Waiting for 1 seconds
             time: 1
