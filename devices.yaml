@@ -275,9 +275,8 @@ devices:
       - status
 
   kissbox-lift-groep-004:
-    # Nog niets te zien
     type: powerrelay
-    description: Tijdelijke tentoonstelling spanningsrail 3 / T.rex zaal?
+    description: Lichtbakken T.rex zaal
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
@@ -325,7 +324,7 @@ devices:
 
   kissbox-ser-groep-001:
     type: powerrelay
-    description: T.rex doe dingen exhibits
+    description: Dino-doe-dingen zaal (exhibits en belichting) + belichting T.rex zaal (vanaf plafond)
     ip: 172.16.75.13
     mac: 00:e0:6b:7e:ff:4d
     state: enabled
