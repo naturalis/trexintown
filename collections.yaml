@@ -489,163 +489,169 @@ collections:
 
   dino-snurk:
     name: Dino snurk preset
-    type: preset
+    type: exhibition
     state: enabled
     actions:
       poweron:
         description: Turn on the Dino snurk preset
         blocking: true
         sequence:
-          - description: Turning off the computers in Dino Doe dingen and Etickets
+          - description: Make sure the Dino-doe-dingen zaal and belichting T.rex zaal have power
+            objective: poweron
+            devices:
+              - kissbox-ser-groep-001
+          - description: Make sure the Ecue light computer is running
+            objective: poweron
+            devices:
+              - ecue-001
+          - objective: delay
+            description: Waiting for 60 seconds
+            time: 60
+          - description: Turn off the computers in Dino-doe-dingen and Etickets
             objective: poweroff
             devices:
               - interactive-graffiti-001
               - interactive-gym-001
               - interactive-dance-001
               - interactive-medischdossier-001
+              - videoplayer-005
               - eticket-checkin-001
               - eticket-checkin-002
           - objective: delay
-            description: Waiting for 30 seconds
-            time: 30
-          - description: Turning off T.rex doe dingen exhibits
-            objective: poweroff
-            devices:
-              - kissbox-ser-groep-001
-          - objective: delay
-            description: Waiting for 120 seconds (for test purposes; should be 870)
-            time: 120
-          - description: Turning off the compressor
+            description: Wait 600 seconds before powering off compressor
+            time: 600
+          - description: Power off the compressor
             objective: poweroff
             devices:
               - kissbox-mer-groep-012
-          - description: Turning on tijdelijke tentoonstelling spanningsrail 3 / T.rex zaal
-            objective: poweron
-            devices:
-              - kissbox-lift-groep-004
-          - description: Turning on Ecue light computer
-            objective: poweron
-            devices:
-              - ecue-001
-          - description: Turning off all computers (except Ecue light computer)
+          - objective: delay
+            description: Wait 300 seconds before powering off the rest
+            time: 300
+          - description: Power off all computers in Dinosafari and T.rex zaal
             objective: poweroff
             devices:
               - videoplayer-001
               - videoplayer-002
               - videoplayer-003
               - videoplayer-004
-              - videoplayer-005
               - bottenapp-001
-          - description: Turning off gewone, wit-gele spots Dinosafari 1
+          - description: Power off gewone, wit-gele spots Dinosafari 1
             objective: poweroff
             devices:
               - kissbox-mer-groep-004
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off gewone, wit-gele spots Dinosafari 1
+          - description: Power off gewone, wit-gele spots Dinosafari 1
             objective: poweroff
             devices:
               - kissbox-mer-groep-006
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off verlichting entresol Dinosafari 2
+          - description: Power off verlichting entresol Dinosafari 2
             objective: poweroff
             devices:
               - kissbox-mer-groep-007
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off LED belichting Dinosafari 2
+          - description: Power off LED belichting Dinosafari 2
             objective: poweroff
             devices:
               - kissbox-mer-groep-008
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off LED belichting Dinosafari 1
+          - description: Power off LED belichting Dinosafari 1
             objective: poweroff
             devices:
               - kissbox-mer-groep-009
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off werkverlichting Dinosafari 1
+          - description: Power off werkverlichting Dinosafari 1
             objective: poweroff
             devices:
               - kissbox-mer-groep-001
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off werkverlichting Dinosafari 2
+          - description: Power off werkverlichting Dinosafari 2
             objective: poweroff
             devices:
               - kissbox-mer-groep-002
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off werkverlichting Restaurant + Dinolab
+          - description: Power off werkverlichting Restaurant + Dinolab
             objective: poweroff
             devices:
               - kissbox-lift-groep-001
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off werkverlichting Dino-doe-dingen
+          - description: Power off werkverlichting Dino-doe-dingen
             objective: poweroff
             devices:
               - kissbox-lift-groep-002
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off werkverlichting Trix
+          - description: Power off werkverlichting Trix
             objective: poweroff
             devices:
               - kissbox-lift-groep-003
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off tijdelijke tentoonstelling spanningsrail 4 / T.rex doe dingen?
+          - description: Power off lichtbakken T.rex zaal
+            objective: poweroff
+            devices:
+              - kissbox-lift-groep-004
+          - objective: delay
+            description: Wait for 1 second
+            time: 1
+          - description: Power off tijdelijke tentoonstelling spanningsrail 4 / T.rex doe dingen?
             objective: poweroff
             devices:
               - kissbox-lift-groep-005
           - objective: delay
-            description: Waiting for 1 second
+            description: Wait for 1 second
             time: 1
-          - description: Turning off reserve
+          - description: Power off reserve
             objective: poweroff
             devices:
               - kissbox-lift-groep-006
           - objective: delay
-            description: Waiting 240 seconds (for compressor)
-            time: 240
+            description: Waiting 30 seconds (for computers in Dinosafari)
+            time: 30
           - objective: delay
-            description: Waiting for 1 seconds
+            description: Wait for 1 second
             time: 1
-          - description: Turning off animatronics Dinosafari 1 (eiland 2) + achtergrondgeluid Dinosafari 1
+          - description: Power off animatronics Dinosafari 1 (eiland 2) + achtergrondgeluid Dinosafari 1
             objective: poweroff
             devices:
               - kissbox-mer-groep-003
           - objective: delay
-            description: Waiting for 1 seconds
+            description: Wait for 1 second
             time: 1
-          - description: Turning off animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
+          - description: Power off animatronics Dinosafari 2 (eiland 1 en 2) + achtergrondgeluid Dinosafari 2
             objective: poweroff
             devices:
               - kissbox-mer-groep-005
           - objective: delay
-            description: Waiting for 1 seconds
+            description: Wait for 1 second
             time: 1
-          - description: Turning off animatronics Dinosafari 1 (eiland 1)
+          - description: Power off animatronics Dinosafari 1 (eiland 1)
             objective: poweron
             devices:
               - kissbox-mer-groep-010
-          - description: Turning off reserve
+          - description: Power off reserve
             objective: poweroff
             devices:
               - kissbox-ser-groep-002
-          - description: Turning off reserve
+          - description: Power off reserve
             objective: poweroff
             devices:
               - kissbox-mer-groep-011
