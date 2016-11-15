@@ -276,7 +276,7 @@ devices:
 
   kissbox-lift-groep-004:
     type: powerrelay
-    description: Lichtbakken T.rex zaal
+    description: Infopanelen podium T.rex zaal
     ip: 172.16.75.12
     mac: 00:e0:6b:7e:ff:7a
     state: enabled
