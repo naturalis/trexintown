@@ -471,6 +471,18 @@ devices:
       - poweroff
       - status
 
+ videoplayer-006:
+    type: linux
+    barcode: dt005878
+    description: Test videoplayer
+    ip: 172.16.75.27
+    mac: dc:fe:07:e0:ec:97
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
   # E-ticket
   eticket-checkin-001:
     type: linux
@@ -503,18 +515,6 @@ devices:
     description: Test videoplayer
     ip: 172.16.75.26
     mac: ec:a8:6b:ff:bb:52
-    state: enabled
-    actions:
-      - poweron
-      - poweroff
-      - status
-
-  stargazer-test-001:
-    type: linux
-    barcode: dt005878
-    description: Test videoplayer
-    ip: 172.16.75.27
-    mac: dc:fe:07:e0:ec:97
     state: enabled
     actions:
       - poweron
