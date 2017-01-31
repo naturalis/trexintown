@@ -150,8 +150,6 @@ collections:
               - videoplayer-003
               - videoplayer-004
               - videoplayer-005
-              - eticket-checkin-001
-              - eticket-checkin-002
               - bottenapp-001
               - ecue-001
           - objective: delay
@@ -515,8 +513,6 @@ collections:
               - interactive-dance-001
               - interactive-medischdossier-001
               - videoplayer-005
-              - eticket-checkin-001
-              - eticket-checkin-002
           - objective: delay
             description: Wait 600 seconds before powering off compressor
             time: 600
