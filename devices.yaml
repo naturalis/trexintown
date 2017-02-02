@@ -507,6 +507,18 @@ devices:
       - poweron
       - poweroff
       - status
+      
+  eticket-checkin-003:
+    type: linux
+    barcode: dt00xxxx
+    description: E-ticket checkin zuil
+    ip: 172.16.75.28
+    mac: 2c:94:64:00:3f:fc
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
 
   # Test
   videoplayer-test-001:
