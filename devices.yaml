@@ -471,7 +471,7 @@ devices:
       - poweroff
       - status
 
- videoplayer-006:
+  videoplayer-006:
     type: linux
     barcode: dt005878
     description: Test videoplayer
