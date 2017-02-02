@@ -129,6 +129,7 @@ collections:
               - videoplayer-005
               - eticket-checkin-001
               - eticket-checkin-002
+              - eticket-checkin-003
               - bottenapp-001
               - ecue-001
           - objective: delay
