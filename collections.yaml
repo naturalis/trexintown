@@ -15,8 +15,15 @@ collections:
             devices:
               - kissbox-mer-groep-012
           - objective: delay
-            description: Waiting for 300 seconds
-            time: 300
+            description: Waiting for 240 seconds
+            time: 240
+          - description: Make sure the Ecue light computer is powered off to prevent issue after power down of building
+            objective: poweroff
+            devices:
+              - ecue-001
+          - objective: delay
+            description: Waiting for 60 seconds
+            time: 60
           - description: Turning on powerrelay
             objective: poweron
             devices:
