@@ -484,22 +484,10 @@ devices:
       - status
 
   # E-ticket
-  eticket-checkin-001:
-    type: linux
-    barcode: dt000000
-    description: E-ticket checkin zuil
-    ip: 172.16.75.24
-    mac: 2c:94:64:00:3c:f1
-    state: enabled
-    actions:
-      - poweron
-      - poweroff
-      - status
-
   eticket-checkin-002:
     type: linux
     barcode: dt005876
-    description: E-ticket checkin zuil
+    description: E-ticket checkin zuil bij (vanaf kassa's bezien links)
     ip: 172.16.75.25
     mac: 2c:94:64:00:3f:66
     state: enabled
@@ -511,7 +499,7 @@ devices:
   eticket-checkin-003:
     type: linux
     barcode: dt00xxxx
-    description: E-ticket checkin zuil
+    description: E-ticket checkin zuil (vanaf kassa's bezien rechts)
     ip: 172.16.75.28
     mac: 2c:94:64:00:3f:fc
     state: enabled
